@@ -1,0 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# API keys file (like key.js or config.js with sensitive info)
+key.js
+config.js
+
+# Logs
+logs/
+*.log
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Build and dist directories
+dist/
+build/
+
+# npm package lock files if you want to ignore (optional)
+package-lock.json
+yarn.lock

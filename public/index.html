@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <div class="weather-app">
         <div class="container">
-            <h3 class="brand">the weather</h3>
+            <h3 class="brand">The Weather</h3>
             <div>
                 <h1 class="temp">16&#176;</h1>
                 <div class="city-time">
-                    <h1 class="name">London</h2>
+                    <h1 class="name">Seattle</h2>
                     <small>
                         <span class="time">06:09</span>
                         <span class="date">Monday Sep 19</span>
                     </small>
                 </div>
                 <div class="weather">
-                    <img src="" class="icon" width="50" height="50" alt="icon">
+                    <img src="" id="imgIcon" class="icon" width="50" height="50" alt="icon">
                     <span class="condition">Cloudy</span>
                 </div>
             </div>
@@ -40,10 +43,10 @@
             </form>
 
             <ul class="cities">
-                <li>Seattle</li>
-                <li>Fukuoka</li>
-                <li>Taipei</li>
-                <li>New York</li>
+                <li class="city">London</li>
+                <li class="city">Fukuoka</li>
+                <li class="city">Taipei</li>
+                <li class="city">New York</li>
             </ul>
 
             <ul class="details">
@@ -64,7 +67,8 @@
         </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
+   
 </body>
 
 </html>
