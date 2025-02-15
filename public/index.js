@@ -1,5 +1,4 @@
-
-import config from "./key.js";
+//import config from "./key.js";
 
 const app = document.querySelector('.weather-app');
 const temp = document.querySelector('.temp');
@@ -14,7 +13,7 @@ const form = document.getElementById('locationInput');
 const search = document.querySelector(".search");
 const btn = document.querySelector('.submit');
 const cities = document.querySelectorAll('.city');
-const key = config.apiKey;
+//const key = config.apiKey;
 
 
 //default 
@@ -78,7 +77,7 @@ function dayOfTheWeek(month, day, year) {
 }
 
 function fetchWeatherData() {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${cityInput}&aqi=no`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=2492d7138e5940bd91183342251302&q=${cityInput}&aqi=no`)
 
         .then(res => res.json())
 
